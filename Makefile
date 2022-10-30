@@ -1,5 +1,5 @@
-[bash]
-----
-make say-hello
-Hello, World!
-----
+# Makefile
+HELLO?=World # знак вопроса указывает, что переменная опциональна. Значение после присвоения можно не указывать.
+
+say:
+	echo "Hello, $(HELLO)!"
